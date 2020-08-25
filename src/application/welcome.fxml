@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="722.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.welcomeController">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="-2.0" prefHeight="470.0" prefWidth="722.0">
+         <children>
+            <ImageView fitHeight="470.0" fitWidth="737.0" layoutX="4.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/h.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="welcome_label" layoutX="86.0" layoutY="341.0" text=" Welcome To Our Restaurant !" textFill="#ebe5e5">
+               <font>
+                  <Font name="Bodoni MT" size="48.0" />
+               </font>
+            </Label>
+            <Button fx:id="loginBtn" layoutX="618.0" layoutY="28.0" mnemonicParsing="false" onAction="#connecterAction" prefHeight="31.0" prefWidth="90.0" text="Login">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="inscriBtn" layoutX="509.0" layoutY="28.0" mnemonicParsing="false" onAction="#InscrireAction" text="Inscription">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="exitBtn" layoutX="402.0" layoutY="28.0" mnemonicParsing="false" onAction="#closeAction" prefHeight="31.0" prefWidth="90.0" text="Exit">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1059.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ReceiptController">
+   <children>
+      <ImageView fitHeight="730.0" fitWidth="1059.0" opacity="0.88" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/blur_2.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="505.0" layoutY="14.0" prefHeight="21.0" prefWidth="210.0" text="Menu" textFill="#9e1149">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Separator layoutX="573.0" layoutY="96.0" orientation="VERTICAL" prefHeight="620.0" />
+      <VBox layoutX="21.0" layoutY="81.0" prefHeight="329.0" prefWidth="237.0">
+         <children>
+            <RadioButton fx:id="id_pizza_marg" mnemonicParsing="false" selected="true" text="Pizza Margherita">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="Food" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="id_pizza_frenchy" mnemonicParsing="false" selected="true" text="Pizza Frenchy" toggleGroup="$Food">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="id_pizza_4_saisons" mnemonicParsing="false" selected="true" text="Pizza 4 Saisons" toggleGroup="$Food">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="id_sandwich_poulet" mnemonicParsing="false" selected="true" text="Sandwich Poulet Grillé" toggleGroup="$Food">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="id_sandwich_kabeb" mnemonicParsing="false" selected="true" text="Sandwich Kabeb" toggleGroup="$Food">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="id_sandwich_foie" mnemonicParsing="false" selected="true" text="Sandwich Foie" toggleGroup="$Food">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="id_sandwich_thon" mnemonicParsing="false" selected="true" text="Sandwich Thon" toggleGroup="$Food">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="id_sandwich_escalope" mnemonicParsing="false" selected="true" text="Sandwich Escalope" toggleGroup="$Food">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="id_ailes" mnemonicParsing="false" selected="true" text="Ailes De Poulet Grillées" toggleGroup="$Food">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="id_nem_crevette" mnemonicParsing="false" selected="true" text="Nem Crevette" toggleGroup="$Food">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="id_nem_boeuf" mnemonicParsing="false" selected="true" text="Nem Boeuf" toggleGroup="$Food">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="id_libanais" mnemonicParsing="false" selected="true" text="Libanais" toggleGroup="$Food">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="id_salade_cesar" mnemonicParsing="false" selected="true" text="Salade Cesar" toggleGroup="$Food">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></RadioButton>
+         </children>
+      </VBox>
+      <VBox layoutX="18.0" layoutY="430.0" prefHeight="271.0" prefWidth="221.0">
+         <children>
+            <RadioButton fx:id="id_eau_p" mnemonicParsing="false" selected="true" text="Eau Palate">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="Drink" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="id_eau_gaz" mnemonicParsing="false" selected="true" text="Eau Gazifié" toggleGroup="$Drink">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="id_soda" mnemonicParsing="false" selected="true" text="Soda" toggleGroup="$Drink">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="id_virgin_mojito" mnemonicParsing="false" selected="true" text="Virgin Mojito" toggleGroup="$Drink">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="id_mojito_aromatise" mnemonicParsing="false" selected="true" text="Mojito Aromatise" toggleGroup="$Drink">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="id_boisson_eneg" mnemonicParsing="false" selected="true" text="Boisson Energitique" toggleGroup="$Drink">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="id_nespresso" mnemonicParsing="false" selected="true" text="Nespresso" toggleGroup="$Drink">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="id_lait_de_poule" mnemonicParsing="false" selected="true" text="Lait De Poule" toggleGroup="$Drink">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="id_jus_orange" mnemonicParsing="false" selected="true" text="Jus d'Orange" toggleGroup="$Drink">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="id_jus_fraise" mnemonicParsing="false" selected="true" text="Jus De Fraise" toggleGroup="$Drink">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </RadioButton>
+         </children></VBox>
+      <VBox layoutX="650.0" layoutY="96.0" prefHeight="286.0" prefWidth="370.0">
+         <children>
+            <TableView fx:id="tabview1" prefHeight="300.0" prefWidth="370.0">
+              <columns>
+                <TableColumn fx:id="OrderItemColumn1" prefWidth="228.0" text="Order Item(Food)" />
+                <TableColumn fx:id="QuantityColumn1" minWidth="0.0" prefWidth="139.0" text="Quantity" />
+              </columns>
+            </TableView>
+         </children></VBox>
+      <VBox layoutX="655.0" layoutY="407.0" prefHeight="228.0" prefWidth="353.0">
+         <children>
+            <TableView fx:id="tabview2" prefHeight="229.0" prefWidth="353.0">
+              <columns>
+                <TableColumn fx:id="OrderItemColumn2" prefWidth="258.0" text="Order Item (Drink)" />
+                <TableColumn fx:id="QuantityColumn2" prefWidth="94.0" text="Quantity" />
+              </columns>
+            </TableView>
+         </children></VBox>
+      <Label fx:id="labelQuantity1" layoutX="359.0" layoutY="175.0" text="Quantity" textFill="#0d0d4d">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="quantity_food" layoutX="362.0" layoutY="202.0" prefHeight="31.0" prefWidth="69.0" text="1" />
+      <Button fx:id="addFood" layoutX="370.0" layoutY="236.0" mnemonicParsing="false" onAction="#newFoodButtonPushed" text="ADD" textFill="#681111">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="LabelQuantity2" layoutX="361.0" layoutY="480.0" text="Quantity" textFill="#220954">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="quantityDrink" layoutX="362.0" layoutY="506.0" prefHeight="31.0" prefWidth="74.0" promptText=" " text="1" />
+      <Button fx:id="AddDrink" layoutX="370.0" layoutY="543.0" mnemonicParsing="false" onAction="#newDrinkButtonPushed" text="ADD" textFill="#571010">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="DeleteBtn" layoutX="694.0" layoutY="670.0" mnemonicParsing="false" onAction="#OnActionDeletebtn" prefHeight="31.0" prefWidth="118.0" text="Delete" textFill="#540a0a">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="paymentBtn" layoutX="832.0" layoutY="670.0" mnemonicParsing="false" onAction="#PaymentAction" prefHeight="31.0" prefWidth="123.0" text="Payment" textFill="#4a0d0d">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

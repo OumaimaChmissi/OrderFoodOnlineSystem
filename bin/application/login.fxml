@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="480.0" prefWidth="732.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ReservationLoginController">
+   <children>
+      <AnchorPane layoutX="35.0" layoutY="-8.0" prefHeight="488.0" prefWidth="722.0">
+         <children>
+            <TextField fx:id="first_name" layoutX="155.0" layoutY="147.0" prefHeight="25.0" prefWidth="179.0" promptText="First Name" />
+            <Label layoutX="46.0" layoutY="205.0" text="Last Name" textFill="#430c21">
+               <font>
+                  <Font name="Comic Sans MS" size="13.0" />
+               </font></Label>
+            <TextField fx:id="last_name" layoutX="155.0" layoutY="201.0" prefHeight="25.0" prefWidth="179.0" promptText="Last Name" />
+            <Label layoutX="46.0" layoutY="257.0" text="Email" textFill="#430c21">
+               <font>
+                  <Font name="Comic Sans MS" size="13.0" />
+               </font></Label>
+            <TextField fx:id="email" layoutX="155.0" layoutY="253.0" prefHeight="25.0" prefWidth="179.0" promptText="xxxx@xxxx.com" />
+            <Label layoutX="47.0" layoutY="306.0" text="Password" textFill="#430c21">
+               <font>
+                  <Font name="Comic Sans MS" size="13.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="password" layoutX="155.0" layoutY="302.0" prefHeight="25.0" prefWidth="179.0" promptText="**********" />
+            <Label layoutX="47.0" layoutY="151.0" text="First Name" textFill="#430c21">
+               <font>
+                  <Font name="Comic Sans MS" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="163.0" fitWidth="166.0" layoutX="459.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+               
+                  <Image url="@../images/Connexion.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="441.0" layoutY="399.0" mnemonicParsing="false" onAction="#gotoAction" prefHeight="34.0" prefWidth="116.0" text="Login">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="isConnected" layoutX="251.0" layoutY="87.0" text=" ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <Blend />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

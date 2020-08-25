@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="439.0" prefWidth="439.0" style="-fx-background-color: ORANGE DARK;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TableController">
+   <children>
+      <ImageView fitHeight="447.0" fitWidth="447.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/drei-stuben-restaurant-tisch.1479206328.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="140.0" layoutY="14.0" prefHeight="39.0" prefWidth="264.0" text="RESERVATION " textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutY="6.0" prefHeight="4.0" prefWidth="439.0" />
+      <Separator layoutY="426.0" prefHeight="4.0" prefWidth="439.0" />
+      <Separator layoutY="57.0" prefHeight="4.0" prefWidth="439.0" />
+      <Label layoutX="60.0" layoutY="93.0" text="Date " textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="210.0" text="Number of tables" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="145.0" text="Time" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="23.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="date_res" layoutX="172.0" layoutY="94.0" promptText="Before 2 days max" style="-fx-border-color: grey;" />
+      <TextField fx:id="time_res" layoutX="172.0" layoutY="146.0" prefHeight="25.0" prefWidth="174.0" promptText="9AM to 11PM" style="-fx-border-color: grey;" />
+      <TextField fx:id="num_table" layoutX="236.0" layoutY="211.0" prefHeight="25.0" prefWidth="174.0" promptText="3 max" style="-fx-border-color: grey;" />
+      <Button fx:id="doneBtn" layoutX="171.0" layoutY="322.0" mnemonicParsing="false" onAction="#DoneAction" prefHeight="27.0" prefWidth="91.0" style="-fx-background-color: white; -fx-border-color: grey;" text="Done" textFill="#a41313">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
